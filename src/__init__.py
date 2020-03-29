@@ -45,16 +45,17 @@ class hopkins_timeseries:
         return states
         
 
+
 class hopkins_client:
     def __init__(self):
         self.__url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
 
-    def query_hopkins_data():
+    def query_hopkins_data(self):
         with urllib.request.urlopen(self.__url) as stream:
             timeseries_hopkins = pandas.read_csv(stream)
             return timeseries_hopkins
         
-    def query_hopkins_timeseries():
+    def query_hopkins_timeseries(self):
         with urllib.request.urlopen(self.__url) as stream:
             timeseries_hopkins = pandas.read_csv(stream)
             date_columns = timeseries_hopkins.columns[4:]
