@@ -27,6 +27,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/gisfromscratch/corona-py",
     packages=["coronapy"],
+    install_requires=["pandas>=1.0.0"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
