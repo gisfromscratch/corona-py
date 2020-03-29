@@ -18,7 +18,7 @@ with open("README.md", "r") as readme_file:
     long_description = readme_file.read()
 
 setuptools.setup(
-    name="coronapy",
+    name="corona_analytics",
     version="0.1",
     author="Jan Tschada",
     author_email="gisfromscratch@live.de",
@@ -26,7 +26,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/gisfromscratch/corona-py",
-    packages=["coronapy"],
+    packages=["corona_analytics"],
     install_requires=["pandas>=1.0.0"],
     classifiers=[
         "Programming Language :: Python :: 3",
