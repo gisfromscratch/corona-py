@@ -20,14 +20,13 @@ with open("README.md", "r") as readme_file:
 setuptools.setup(
     name="corona-py",
     version="0.1",
-    scripts=["src"],
     author="Jan Tschada",
     author_email="gisfromscratch@live.de",
     description="Simple python module for accessing Coronavirus datasources.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/gisfromscratch/corona-py",
-    packages=setuptools.find_packages(),
+    packages=["src"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
